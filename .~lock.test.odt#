@@ -1,0 +1,6 @@
+#!/bin/bash
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+export CUDA_VISIBLE_DEVICES=$2
+export MFOLDDIR=/root/mf2_db/mfold2-conda/
+
+/root/mf2_db/mfold2-conda/bin/mfold2_batch --model-type alphafold2_multimer_v1 --data /root/da_ab_test/mypars --num-models 5 --num-recycle 20 --random-seed 132242 --num-seeds 1 --model-order "3,5,1,2,4" $1_nb1.a3m ./$1_nb1_v1 >  $1_nb1_v1.log 2> $1_nb1_v1.err
