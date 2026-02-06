@@ -14,7 +14,7 @@ conda activate "$COLABFOLDDIR/colabfold-conda"
 
 # reinstall colabfold and alphafold-colabfold
 "$COLABFOLDDIR/colabfold-conda/bin/pip" install --no-warn-conflicts --upgrade --force-reinstall \
-    "colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold"
+    "colabfold[alphafold-minus-jax] @ git+https://github.com/gj85369/Colabfold_achparis@master"
 "$COLABFOLDDIR/colabfold-conda/bin/pip" install "colabfold[alphafold]"
 "$COLABFOLDDIR/colabfold-conda/bin/pip" install --force-reinstall "jax[cuda12]==0.5.3" "numpy==2.2.5"
 "$COLABFOLDDIR/colabfold-conda/bin/pip" install --upgrade tensorflow
