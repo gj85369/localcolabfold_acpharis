@@ -28,8 +28,8 @@ conda activate "$COLABFOLDDIR/colabfold-conda"
 "$COLABFOLDDIR/colabfold-conda/bin/pip" install silence_tensorflow
 
 # Download the updater
-#wget -qnc -O "$COLABFOLDDIR/update_linux.sh" \
-#    https://raw.githubusercontent.com/YoshitakaMo/localcolabfold/main/update_linux.sh
+wget -qnc -O "$COLABFOLDDIR/update_linux.sh" \
+    https://raw.githubusercontent.com/gj85369/localcolabfold_acpharis/refs/heads/master/update_linux.sh
 chmod +x "$COLABFOLDDIR/update_linux.sh"
 
 pushd "${COLABFOLDDIR}/colabfold-conda/lib/python3.10/site-packages/colabfold"
